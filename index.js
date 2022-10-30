@@ -9,7 +9,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
 app.get("*", async(req, res) => {
-    res.sendFile(path.join(__dirname, "first", "build", "index.html"))
+    res.sendFile(path.join(".../",__dirname, "first", "build", "index.html"))
     res.status(200);
 });
 
